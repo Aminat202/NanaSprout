@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanaSprout - Hackathon Submission</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 48px;
+            background: linear-gradient(90deg, #4ade80, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #94a3b8;
+            font-style: italic;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #4ade80;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+
+        p,
+        li {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #e2e8f0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li::before {
+            content: "✦ ";
+            color: #4ade80;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .link-box {
+            background: rgba(74, 222, 128, 0.1);
+            border: 1px solid #4ade80;
+            border-radius: 12px;
+            padding: 15px 25px;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .link-box h3 {
+            color: #4ade80;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .link-box a,
+        .link-box span {
+            color: #fff;
+            font-size: 14px;
+            word-break: break-all;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media print {
+            body {
+                background: #1a1a2e;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🌱</div>
+            <h1>NanaSprout</h1>
+            <p class="tagline">"Small choices. Big planet. Play your part."</p>
+        </div>
+
+        <div class="section">
+            <h2>🎯 What is NanaSprout?</h2>
+            <p>
+                NanaSprout is a gamified eco-education app that turns sustainability learning into an engaging
+                adventure.
+                Players face AI-generated environmental dilemmas, make real-world decisions, and compete on global
+                leaderboards
+                — all while learning how to reduce their carbon footprint.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>📸 Screenshots</h2>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-bottom: 20px;">
+                <div style="flex: 1; min-width: 200px; text-align: center;">
+                    <img src="image_a.png" alt="Mission Hub"
+                        style="width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <p style="font-size: 12px; color: #94a3b8; margin-top: 8px;">Mission Hub</p>
+                </div>
+                <div style="flex: 1; min-width: 200px; text-align: center;">
+                    <img src="image_b.png" alt="Gameplay"
+                        style="width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <p style="font-size: 12px; color: #94a3b8; margin-top: 8px;">Gameplay</p>
+                </div>
+                <div style="flex: 1; min-width: 200px; text-align: center;">
+                    <img src="image_c.png" alt="Profile"
+                        style="width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                    <p style="font-size: 12px; color: #94a3b8; margin-top: 8px;">Profile</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>✨ Key Features</h2>
+            <ul>
+                <li>AI-powered dynamic scenarios that change daily</li>
+                <li>Animated "Biosys Entity" spirit avatars (Ghibli-inspired!)</li>
+                <li>Custom photo avatars with magical floating effects</li>
+                <li>Real-time global leaderboards</li>
+                <li>Eco-Operator ranking system (Carbon Cadet → Solar Sniper)</li>
+                <li>Daily themed challenges (Food Waste Monday, Transport Tuesday, etc.)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🔗 Project Links</h2>
+            <div class="links">
+                <div class="link-box">
+                    <h3>🌐 LIVE DEMO</h3>
+                    <a href="https://nana-sprout.vercel.app/" target="_blank"
+                        style="color: #4ade80;">https://nana-sprout.vercel.app/</a>
+                </div>
+                <div class="link-box">
+                    <h3>📂 GITHUB REPO</h3>
+                    <a href="https://github.com/Aminat202/NanaSprout" target="_blank"
+                        style="color: #4ade80;">https://github.com/Aminat202/NanaSprout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🛠️ Built With</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">⚛️ React</span>
+                <span class="tech-tag">⚡ Vite</span>
+                <span class="tech-tag">🎨 Tailwind CSS</span>
+                <span class="tech-tag">✨ Framer Motion</span>
+                <span class="tech-tag">🗄️ Supabase</span>
+                <span class="tech-tag">🤖 Cloudflare AI Workers</span>
+                <span class="tech-tag">📷 Unsplash API</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>👩‍💻 Team</h2>
+            <p>Built with 💚 by <strong>Amina</strong></p>
+        </div>
+
+        <div class="footer">
+            <p>NanaSprout © 2025 | Hackathon Submission</p>
+        </div>
+    </div>
+</body>
+
+</html>
